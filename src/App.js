@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import ExpenseItem from "./components/ExpenseItem";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <div>Food Rs 10</div>
       <div>Petrol Rs 100 </div>
       <div> Movies Rs 200</div>
+      <ExpenseItem></ExpenseItem>
     </div>
   );
 }
