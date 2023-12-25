@@ -1,0 +1,32 @@
+/* ExpenseItem.css */
+
+.expense-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+  }
+  
+  .expense-item h1 {
+    color: #333;
+  }
+  
+  .expense-item-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .expense-item-description h3 {
+    margin: 0;
+  }
+  
+  .expense-item-price {
+    font-weight: bold;
+    color: #28a745; /* green color for price */
+  }
+  
+  .location {
+    color: #007bff; /* blue color for location */
+  }
+  
