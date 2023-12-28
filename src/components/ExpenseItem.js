@@ -7,12 +7,16 @@ function ExpenseItem(props){
 //     const expenseTitle='Bike petrol';
 //     const expenseAmount=200;
 //     const LocationOfExpenditure='Koundampalayam';
- 
+     
+    const clickHander=()=>{
+        console.log('clicked!!!');
+    }; 
 
     return( 
     <Card className='expense-item'>
          <ExpenseDate date={props.date}/> 
         <ExpenseDetail amount= {props.amount}  location={props.location}   title={props.title}  />
+        <button onClick={clickHander}>Display</button>
     </Card>
     );
 }
