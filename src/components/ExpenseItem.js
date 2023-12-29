@@ -17,7 +17,7 @@ function ExpenseItem(props){
     <Card className='expense-item'>
          <ExpenseDate date={props.date}/> 
         <ExpenseDetail amount= {props.amount}  location={props.location}   title={title}  />
-        <button onClick={clickHander}>Change title</button>
+       {/* <button onClick={clickHander}>Change title</button> */}
     </Card>
     );
 }

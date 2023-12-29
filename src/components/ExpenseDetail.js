@@ -11,7 +11,7 @@ function ExpenseDetail(props){
             <h3>{props.title}</h3>
             <div className="location">{props.location}</div>
         <div className="expense-item__price" >Rs {price}</div>
-        <button onClick={priceHandler}>Change Price</button>
+        {/* <button onClick={priceHandler}>Change Price</button> */}
         
         </div>
     );
