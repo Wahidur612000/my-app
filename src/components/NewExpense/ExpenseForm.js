@@ -63,7 +63,7 @@ function ExpenseForm(props){
                 onChange={titleChangeHandler}/>
             </div>
             <div className='new-expense__control'>
-                <label>amount</label>
+                <label>Amount</label>
                 <input type='number' min="1"  step="1" 
                 value={enteredAmount} 
                 onChange={amountChangeHandler} />

@@ -7,7 +7,13 @@ function Expenses(props){
         <Card className='expenses'>
           <ExpensesFilter />
      {
-        props.item.map((val)=><ExpenseItem title={val.title} amount={val.amount} date={val.date } location={val.location}></ExpenseItem>)
+        props.item.map((val, index)=>
+        <ExpenseItem 
+        key={val.id}
+        title={val.title} 
+        amount={val.amount} 
+        date={val.date } 
+        location={val.location}></ExpenseItem>)
       }
         </Card>
     )
