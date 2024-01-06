@@ -16,16 +16,23 @@ function Expenses(props){
     return(
         <Card className='expenses'>
           <ExpensesFilter selected={filteredYear} changeFilter={filteredHandler} />
-     {
+     
+     {filteredExpenses.length===1  && <p>Only single Expense here. Please add more...</p>}
+     {filteredExpenses.length===0 ? (
+     <p>No Expenses Found</p>):(
+      
         filteredExpenses.map((val)=>
         <ExpenseItem 
         key={val.id}
         title={val.title} 
         amount={val.amount} 
         date={val.date } 
-        ></ExpenseItem>)
-      }
+        ></ExpenseItem>
+      )
+     )
+    } 
+     
         </Card>
-    )
+    );
 }
 export default Expenses;
